@@ -1,0 +1,489 @@
+/* General Styles */
+:root {
+    --bg-color: #faf8f9;
+    --text-color: #0E2018;
+    --accent-color: #FFDD44;
+    --font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: var(--bg-color);
+    font-family: var(--font-family);
+    font-size: 1.2rem;
+}
+
+/* Navbar Styles */
+.navbar {
+    background-color: var(--bg-color);
+}
+
+.navbar-brand,
+.navbar-nav .nav-link {
+    color: var(--text-color) !important;
+    font-weight: bold;
+    font-family: var(--font-family);
+}
+
+.navbar-nav .nav-link.active {
+    color: var(--accent-color) !important;
+}
+
+/* Section Styles */
+.section {
+    margin: 50px 0;
+}
+
+.section-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* Main Section Styles */
+.main-section {
+    position: relative;
+    background-image: url('../images2/background-image.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 150px 0;
+    color: var(--accent-color);
+    text-align: center;
+}
+
+.main-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(172, 175, 130, 0.6);
+    z-index: 1;
+}
+
+.main-section .content {
+    position: relative;
+    z-index: 2;
+}
+
+.main-section h1,
+.main-section h2,
+.main-section p {
+    margin-bottom: 40px;
+    color: #faf8f9;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 1);
+}
+
+.main-section h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.main-section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.main-section p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+/* About Section Styles */
+.about-section {
+    padding: 50px 0;
+    color: #0E2018;
+}
+
+.about-section h2 {
+    font-size: 2rem;
+    margin: 20px 0 10px;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.about-section h3 {
+    font-size: 1.2rem;
+    margin: -40px 0 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-style: italic;
+}
+
+.profile-picture {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 3px solid #0E2018;
+    overflow: hidden;
+    margin: 0 auto 30px;
+}
+
+.profile-picture img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.text-content {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+    color: #0E2018;
+    font-size: 1.2rem;
+}
+
+#about-me .ski-box {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;
+    max-width: 1000px;
+    padding: 15px;
+    background-color: #acaf82;
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+#about-me .ski-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    padding: 15px 20px;
+    height: 60px;
+    box-sizing: border-box;
+    background-color: #acaf82;
+    color: #0E2018;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    font-size: 1.2rem;
+}
+
+#about-me .ski-header:hover {
+    box-shadow: 0 0 10px #FFDD44;
+}
+
+#about-me .ski-icon {
+    font-size: 2rem;
+    width: 24px;
+    text-align: center;
+    line-height: 1;
+    color: #FFDD44;
+}
+
+#about-me .ski-content {
+    font-size: 1.2rem;
+    display: none;
+    margin-top: 10px;
+    padding: 15px;
+    color: #0E2018;
+    line-height: 1.6;
+    overflow: hidden;
+}
+
+#about-me .social-icons img {
+    width: 30px;
+    height: auto;
+    margin: 0 10px;
+    filter: invert(33%) sepia(10%) saturate(1424%) hue-rotate(28deg) brightness(94%) contrast(88%);
+}
+
+/* Skills Section Styles */
+#skills {
+    background-color: #faf8f9;
+    padding: 50px 0;
+    color: #0E2018;
+}
+
+#skills h2 {
+    margin: 20px 0 40px;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.ski-box {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    margin: 0 10px;
+    padding: 15px;
+    background-color: #acaf82;
+    transition: box-shadow 0.3s ease-in-out;
+    text-align: center;
+}
+
+.ski-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    padding: 15px 20px;
+    height: 60px;
+    box-sizing: border-box;
+    background-color: #acaf82;
+    color: #0E2018;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    font-size: 1.2rem;
+}
+
+.ski-header:hover {
+    box-shadow: 0 0 10px #FFDD44;
+}
+
+.ski-icon {
+    font-size: 2rem;
+    width: 24px;
+    line-height: 1;
+    text-align: center;
+    color: #FFDD44;
+}
+
+.skill-description {
+    font-size: 1.2rem;
+    margin: 10px 10px 100px;
+}
+
+.ski-content {
+    font-size: 1.2rem;
+    display: none;
+    margin-top: 10px;
+    padding: 15px;
+    color: #0E2018;
+    line-height: 1.6;
+    overflow: hidden;
+}
+
+/* Educations Section Styles */
+.educations-section {
+    padding: 50px 0;
+    color: #0E2018;
+    background-color: #acaf82;
+}
+
+.educations-section h2 {
+    margin-top: 20px;
+    margin-bottom: 40px;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.educations-container {
+    padding: 50px;
+    border-radius: 15px;
+}
+
+#educations .section-title {
+    color: #FFDD44;
+    font-size: 2rem;
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    z-index: 2;
+    position: relative;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+#educations .project-title {
+    color: #0E2018;
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    z-index: 2;
+    position: relative;
+}
+
+#educations .project-description {
+    color: #0E2018;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    z-index: 2;
+    position: relative;
+}
+
+#educations .view-concept-btn {
+    background-color: transparent;
+    color: #0E2018;
+    border: 1px solid #0E2018;
+    padding: 6px 12px;
+    font-size: 0.95rem;
+    font-weight: normal;
+    transition: background-color 0.3s, color 0.3s;
+    z-index: 2;
+    position: relative;
+    text-decoration: none;
+    display: inline-block;
+    margin: 8px 0;
+    border-radius: 4px;
+}
+
+#educations .view-concept-btn:hover {
+    background-color: #0E2018;
+    color: #FFDD44;
+}
+
+/* Experiences Section Styles */
+.experiences-section {
+    padding: 50px 0;
+    color: #0E2018;
+}
+
+.experiences-section h2 {
+    font-size: 2rem;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.experiences-section h5 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    color: #FFDD44;
+}
+
+.timeline {
+    width: 100%;
+    background-color: #acaf82;
+    color: #0E2018;
+    padding: 30px 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+.timeline ul {
+    list-style-type: none;
+    border-left: 2px solid #FFDD44;
+    padding: 10px 5px;
+}
+
+.timeline ul li {
+    padding: 20px 20px;
+    position: relative;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.timeline ul li span {
+    display: inline-block;
+    background-color: #FFDD44;
+    border-radius: 25px;
+    padding: 2px 5px;
+    font-size: 1.1rem;
+    font-style: italic;
+    text-align: center;
+}
+
+.timeline ul li .content h3 {
+    color: #0E2018;
+    font-size: 1.2rem;
+    padding-top: 5px;
+}
+
+.timeline ul li .content p {
+    padding: 5px 0px 15px 0px;
+    font-size: 1.2rem;
+}
+
+.timeline ul li:before {
+    position: absolute;
+    content: '';
+    width: 10px;
+    height: 10px;
+    background-color: #0E2018;
+    border-radius: 50%;
+    left: -11px;
+    top: 28px;
+    transition: 0.5s;
+}
+
+.timeline ul li:hover {
+    background-color: #acaf82;
+}
+
+.timeline ul li:hover:before {
+    background-color: #FFDD44;
+    box-shadow: 0px 0px 10px 2px #FFDD44;
+}
+
+/* Contact Section Styles */
+.contact-section {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    padding: 50px 0;
+    margin-top: 50px;
+    color: #0E2018;
+    background-color: #acaf82;
+}
+
+.contact-section h2 {
+    margin-top: 20px;
+    margin-bottom: 40px;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.contact-section h4 {
+    color: #FFDD44;
+    text-shadow: 2px 2px 10px #FFDD44;
+    font-size: 1rem;
+}
+
+.contact-description {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+}
+
+.contact-section .social-icons {
+    margin-top: 0px;
+    display: flex;
+    justify-content: center;
+}
+
+.contact-section .social-icons img {
+    width: 30px;
+    height: auto;
+    margin: 0 10px;
+    filter: invert(10%) sepia(20%) saturate(700%) hue-rotate(95deg) brightness(70%) contrast(120%);
+}
+
+.article-link {
+    background-color: transparent;
+    color: #0E2018;
+    border: none;
+    padding: 0;
+    font-size: 1rem;
+    font-weight: normal;
+    text-decoration: underline;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.article-link:hover {
+    color: #FFDD44;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .main-section h1 {
+        font-size: 2rem;
+    }
+    .main-section h2 {
+        font-size: 1.5rem;
+    }
+    .timeline {
+        padding: 30px 5px 30px 10px;
+    }
+    .timeline ul li .content h3 {
+        color: #0E2018;
+        font-size: 1.2rem;
+    }
+}
